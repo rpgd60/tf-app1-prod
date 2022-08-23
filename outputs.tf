@@ -6,10 +6,12 @@ output "root_resource_group_id" {
 output "root_resource_group_name" {
   description = "The name of the resource group"
   value       = module.static_website.resource_group_name
+  sensitive = true
 }
 output "root_resource_group_location" {
   description = "resource group location"
   value       = module.static_website.resource_group_location
+  sensitive = true
 }
 output "root_storage_account_id" {
   description = "storage account id"

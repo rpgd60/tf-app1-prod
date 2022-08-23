@@ -4,7 +4,7 @@
 locals {
   name_suffix = "${var.app_name}-${var.environment}-${var.region}"
   tags = {
-    Source          = "terraform"
+    Source          = "terraform cloud"
     Env             = var.environment
     CostCenter      = var.cost_center
     ApplicationName = var.app_name
@@ -12,7 +12,7 @@ locals {
 }
 
 module "static_website" {
-#  source = "git@ssh.dev.azure.com:v3/rpgd60/tf-course-01/tf-modules-ado//modules/tf-azure-webstatic-ado?ref=v0.9.1"
+  #  source = "git@ssh.dev.azure.com:v3/rpgd60/tf-course-01/tf-modules-ado//modules/tf-azure-webstatic-ado?ref=v0.9.1"
   #  source = "git@github.com:rpgd60/tf-azure-webstatic.git?ref=1.1.0"
   source = "github.com/rpgd60/tf-azure-webstatic.git?ref=1.1.0"
 

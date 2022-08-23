@@ -1,13 +1,13 @@
 variable "region" {
   type        = string
-  default     = "westeurope"
+  # default     = "westeurope"
   description = "Region for Location of the resource group."
 }
 
 variable "environment" {
   description = "Workload environment"
   type        = string
-  default     = "prod"
+  # default     = "prod"
 }
 
 variable "app_name" {
@@ -19,5 +19,5 @@ variable "app_name" {
 variable "cost_center" {
   type        = string
   description = "Cost Center for workload"
-  default     = "00000"
+  # default     = "00000"
 }

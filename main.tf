@@ -12,7 +12,8 @@ locals {
 }
 
 module "static_website" {
-  source = "git@ssh.dev.azure.com:v3/rpgd60/tf-course-01/tf-modules-ado//modules/tf-azure-webstatic-ado?ref=v0.9.1"
+#  source = "git@ssh.dev.azure.com:v3/rpgd60/tf-course-01/tf-modules-ado//modules/tf-azure-webstatic-ado?ref=v0.9.1"
+  source = "git@github.com:rpgd60/tf-azure-webstatic.git?ref=1.0.0"
 
   # Resource Group
   region  = var.region
